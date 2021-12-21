@@ -4,11 +4,20 @@
 </head>
 <body>
 
-Click the following button for the SpeechSynthesisUtterance API:
-
-<button onClick='initialize()'>
-  Utter
-</button>
+<div>
+  <label for="message">
+    Enter text that you wish to be uttered:
+  </label>
+  <textarea
+    name="message"
+    placeholder="Add text here"
+    id="message"></textarea>
+</div>
+<div>
+  <button onClick='initialize()'>
+    Speak the text entered above
+  </button>
+</div>
 
 <script src="js/speech.js"></script>
 </body>
