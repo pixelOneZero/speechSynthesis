@@ -11,7 +11,7 @@
     msg.rate = 1; // 0.1 to 10
     msg.pitch = .9; //0 to 2
     msg.text = message?.value?.length > 0 ? message.value : 'This is the speech synthesis API. The length of voices is ' + voices.length + ".  The rate of speech is " + msg.rate;
-    msg.lang = 'fr-ca';
+    msg.lang = 'en-US';
 
     msg.onend = function(e) {
       console.log('Finished in ' + event.elapsedTime + ' seconds.');

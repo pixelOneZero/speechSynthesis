@@ -1,0 +1,19 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .875rem;
+  font-weight: 400;
+  margin: 0;
+  padding:0;
+}
+
+section[role=main] {
+  padding: 1rem;
+}
+
+textarea#message {
+  display:block;
+  width: 20rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 1rem;
+  margin: .5rem 0 1.5rem 0;
+}
