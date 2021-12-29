@@ -11,7 +11,7 @@
       speech.volume = 1; // 0 to 1
       speech.rate = 1; // 0.1 to 10
       speech.pitch = .9; //0 to 2
-      speech.text = message?.value?.length > 0 ? message.value : 'This is the speech synthesis API. The length of voices is ' + voices.length + ".  The rate of speech is " + speech.rate;
+      speech.text = message?.value?.length > 0 ? message.value : `This is the speech synthesis API. The length of voices is ${voices.length}.  The rate of speech is ${speech.rate}`;
       speech.lang = 'en-US';
 
       speech.onend = function(e) {
@@ -27,6 +27,7 @@
 
     pause: () => {
       console.log('pause invoked');
+      speechSynthesis.cancel();
     }
   }
 
