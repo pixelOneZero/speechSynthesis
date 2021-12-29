@@ -27,7 +27,12 @@
 
     pause: () => {
       console.log('pause invoked');
-      speechSynthesis.cancel();
+      speechSynthesis.pause();
+    },
+
+    resume: () => {
+      console.log('resume invoked');
+      speechSynthesis.resume();
     }
   }
 

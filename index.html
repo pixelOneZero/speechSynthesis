@@ -18,11 +18,14 @@
       id="message"></textarea>
   </div>
   <div>
-    <button onClick='speech.initialize()'>
+    <button onClick='speech.initialize()' id='btn_speak'>
       Speak
     </button>
-    <button onClick='speech.pause()'>
-      Cancel speech
+    <button onClick='speech.pause()' id='btn_pause'>
+      Pause speech
+    </button>
+    <button onClick='speech.resume()' id='btn_resume'>
+      Resume speech
     </button>
   </div>
 </section>
