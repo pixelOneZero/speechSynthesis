@@ -16,6 +16,10 @@
 
       speech.onend = function(e) {
         console.log('Finished in ' + event.elapsedTime + ' seconds.');
+        const buttonPause = document.getElementById('btn_pause');
+        if (buttonPause) {
+          buttonPause.disabled = true;
+        }
       };
 
       speech.onerror = function(e) {
@@ -23,6 +27,11 @@
       }
 
       speechSynthesis.speak(speech);
+
+      const buttonPause = document.getElementById('btn_pause');
+      if (buttonPause) {
+        buttonPause.disabled = false;
+      }
     },
 
     pause: () => {
