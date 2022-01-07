@@ -42,7 +42,13 @@
     resume: () => {
       console.log('resume invoked');
       speechSynthesis.resume();
+    },
+
+    cancel: () => {
+      console.log('cancel invoked');
+      speechSynthesis.cancel();
     }
+
   }
 
 })();
