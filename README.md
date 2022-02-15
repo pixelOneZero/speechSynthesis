@@ -9,13 +9,3 @@ python -m SimpleHTTPServer
 (Assumes you have MacOS and are running Python)
 
 Then view the demo at http://0.0.0.0:8000/ in a browser.
-
-
-
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-```
